@@ -1,0 +1,37 @@
+/* Heading with description = margin-top 1rem
+Heading with box = margin-top 1.5rem
+Box items = 0.5rem
+Footer items = margin-top 0.75rem
+Footer list items = 1rem
+Sections gap = 0.5rem */
+
+:root {
+    --large: 1.5rem;
+    --regular: 1rem;
+    --small: 0.5rem;
+}
+
+.heading+.description {
+    margin-top: var(--regular);
+}
+
+.divider {
+    width: 100%;
+    height: 0.5rem;
+}
+
+@media screen and (min-height=1920) {
+    /* Desktop or Wide screen */
+}
+
+@media screen and (min-height=1280) {
+    /* Laptop */
+}
+
+@media screen and (min-height=900) {
+    /* Tablet */
+}
+
+@media screen and (min-height=600) {
+    /* Mobile */
+}

@@ -1,0 +1,46 @@
+Viewport sizes
+----
+Mobile = >600
+Tablet = >900
+Laptop = >1280
+Desktop = >1920
+
+Font Family
+----
+Primary = Poppins Bolder
+Secondary = Poppins Regular
+Accent = Poppins Mediums
+
+Font size
+----
+Heading = 900 48px
+Secondary Heading = 400 20px
+Body = 400 24px
+Form = 400 16px
+Small =  400 14px
+--
+Button = 500 14px
+Button Outlined = 400 16px
+Button Large = 500 24px 
+
+Color
+----
+Primary = #DD0B15
+Primary :hover = #C11119
+Black
+White
+Gray = #2D2D2D
+Gray :hover = #3C3C3C
+--
+Gray [text] = rgba(255,255,255,0.7)
+Transparent background = rgba(22,22,22,0.7)
+Button outlined border = rgba(128,128,128,0.7)
+
+Spacing
+----
+Heading with text = 1rem
+Heading with box = 1.5rem
+Box items = 0.5rem
+Conteiner items = 0.75rem
+List items = 1rem
+Section gap = 0.5rem

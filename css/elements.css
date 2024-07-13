@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section,
+.section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav,
+.section>.container,
+section>.container {
+    width: 75vw;
+    height: 100%;
+    padding: 4.5rem 0;
+    display: flex;
+    column-gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content,
+.container .preview {
+    flex-basis: 100%;
+}
+
+.divider {
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+}
+
+.btn {
+    text-decoration: none !important;
+    cursor: pointer;
+    width: fit-content;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn-filled {
+    border: none;
+}
+
+.btn-small {
+    padding: 0.45rem 1rem;
+    column-gap: 0.25rem;
+}
+
+.btn-small.btn-outlined {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.btn-large {
+    padding: 0.75rem 1.5rem;
+    column-gap: 0.5rem;
+}
+
+form input {
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+/* NEEDS UPGRADE */
+/* adds icon insted of default arrow*/
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../assets/icons/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10%) center;
+    width: fit-content;
+}
+
+/* NEEDS UPGRADE */
+.select-box {
+    padding-right: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+@media screen and (max-width:960px) {
+
+    .section>.container,
+    section>.container {
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1920px) {
+
+    /* Desktop or Wide screen */
+    nav,
+    .section>.container,
+    section>.container {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    /* Tablet */
+    nav,
+    .section>.container,
+    section>.container {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    /* Mobile */
+    nav,
+    .section>.container,
+    section>.container {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width:599.9px) {
+
+    /* Small screen */
+    nav,
+    .section>.container,
+    section>.container {
+        width: 90vw;
+    }
+
+
+}

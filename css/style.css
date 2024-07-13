@@ -1,0 +1,264 @@
+nav {
+    padding: 1.5rem !important;
+}
+
+nav .company-logo img {
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+nav .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#landing-hero {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../assets/images/hero-background.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#landing-hero .overlay {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-hero .body {
+    background: transparent;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-hero nav {
+    flex: 1;
+}
+
+
+.divider {
+    z-index: 10;
+}
+
+#landing-hero .container {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: calc(100% - 3rem);
+}
+
+#landing-hero .action_get-started {
+    margin-top: 1.5rem;
+}
+
+.action_get-started {
+    padding: 0 1.5rem;
+}
+
+#faqs .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#faqs .list {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+#faqs .list dt {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#faqs .list .item.active .icon {
+    rotate: 45deg;
+}
+
+#faqs .list .item.active dd {
+    display: flex;
+}
+
+#faqs .list dd {
+    padding: 1.5rem;
+    margin-top: 0.0625rem;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    display: none;
+}
+
+#faqs .action_get-started {
+    margin-top: calc(1.5rem * 2.25);
+}
+
+footer .container {
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: normal !important;
+}
+
+footer .sitemap-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem;
+}
+
+.feature .preview img {
+    width: 100%;
+    height: 100%;
+}
+
+.preview-container {
+    position: relative;
+}
+
+#preview-video-1 {
+    position: absolute;
+    top: 20.5%;
+    left: 75.1px;
+    height: 53.7%;
+    object-fit: cover;
+    border-radius: 1px;
+    z-index: -1;
+}
+
+#preview-video-2 {
+    position: absolute;
+    top: 8.5%;
+    left: 108.1px;
+    height: 44.5%;
+    width: 63%;
+    object-fit: cover;
+    border-radius: 1px;
+    z-index: -1;
+}
+
+
+/* NEEDS UPGRADE */
+/* adds icon in select box */
+.icon-wrapper select {
+    padding-left: 2.25rem;
+}
+
+/* NEEDS UPGRADE */
+.icon-wrapper {
+    position: relative;
+    width: fit-content;
+}
+
+/* NEEDS UPGRADE */
+.icon-wrapper img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+.action_get-started {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+/* NEED UPGRADE */
+.action_get-started form {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+/* NEED UPGRADE */
+.action_get-started form input {
+    border-width: 1px;
+    border-style: solid;
+    width: 60%;
+}
+
+
+@media screen and (max-width:960px) {
+
+    nav .company-logo img {
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+
+    nav .container {
+        flex-direction: row !important;
+    }
+
+    /* main breaking point */
+    #landing-hero {
+        /* height: 60vh; */
+    }
+
+    #landing-hero .action_get-started {
+        margin-top: 1rem;
+    }
+
+    .feature .content {
+        text-align: center;
+    }
+
+    .feature .preview {
+        order: 2;
+    }
+
+    #faqs .list .icon {
+        height: 2rem;
+    }
+
+    .action_get-started form {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .action_get-started form input {
+        width: 90%;
+    }
+
+    footer .container {
+        padding: 2rem 0 !important;
+    }
+
+    footer .sitemap-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:1920px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:900px) {}
+
+@media screen and (max-width:599.9px) {
+
+    nav select {
+        padding: 1rem 1.5rem !important;
+    }
+}

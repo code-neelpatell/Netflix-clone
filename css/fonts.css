@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+/* Font Family
+----
+Primary = Poppins Bolder
+Secondary = Poppins Regular
+Accent = Poppins Mediums
+
+Font size
+----
+Heading = 800 3rem -> 700 2rem
+Secondary Heading = 400 1.25rem
+Body = 400 1.5rem -> 400 1.125rem
+Small = 400 1rem
+Extra Small =  400 0.875rem
+--
+Button = 500 0.875rem
+Button Outlined = 400 1rem
+Button Large = 500 1.5rem  -> 500 1.125rem
+ */
+
+ html {
+    font-size: 15px;
+}
+
+
+:root {
+    /* font sizes */
+    --size-heading: 3rem;
+    --size-secondary-heading: 1.25rem;
+    --size-body: 1.5rem;
+    --size-small: 1rem;
+    --size-extra-small: 0.875rem;
+    /* font weights */
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-bold: 800;
+
+    /* small screen font sizes */
+    --size-heading_small: 2rem;
+    --size-body_small: 1.1255rem;
+    /* small screen font weights */
+    --weight-bold_small: 700;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.4;
+}
+
+body {
+    font-size: var(--size-body);
+    font-weight: var(--weight-regular);
+}
+
+form input {
+    font-size: var(--size-small);
+    font-weight: var(--weight-regular);
+}
+
+.heading {
+    font-size: var(--size-heading);
+    font-weight: var(--weight-bold);
+}
+
+.secondary-heading {
+    font-size: var(--size-secondary-heading);
+    font-weight: var(--weight-regular);
+}
+
+.small-text {
+    font-size: var(--size-extra-small);
+}
+
+.btn {
+    font-weight: var(--weight-medium);
+}
+
+.btn-outlined {
+    font-weight: var(--weight-regular) !important;
+}
+
+.btn-small {
+    font-size: var(--size-extra-small);
+}
+
+.btn-small.btn-outlined {
+    font-size: var(--size-small);
+}
+
+.btn-large {
+    font-size: var(--size-body);
+}
+
+footer {
+    font-size: var(--size-extra-small);
+}
+
+footer .contact-info {
+    font-size: var(--size-small);
+}
+
+@media screen and (max-width:960px) {
+    .heading {
+        font-size: var(--size-heading_small);
+        font-weight: var(--weight-bold_small);
+    }
+
+    body {
+        font-size: var(--size-body_small);
+    }
+
+    .btn-large {
+        font-size: var(--size-body_small);
+    }
+}
+
+@media screen and (min-width:1920px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:900px) {}
+
+@media screen and (max-width:599.9px) {
+
+    /* Small screen */
+    nav select {
+        font-size: 0 !important;
+    }
+
+    nav select option {
+        font-size: var(--size-small);
+    }
+}

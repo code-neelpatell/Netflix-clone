@@ -1,0 +1,101 @@
+/* Primary = #DD0B15
+Primary :hover = #C11119
+Black
+White
+Gray = #2D2D2D
+Gray :hover = #3C3C3C
+--
+Gray [text] = rgba(255,255,255,0.7)
+Transparent background = rgba(22,22,22,0.7)
+Button outlined border = rgba(128,128,128,0.7) */
+
+:root {
+    --primary: #DD0B15;
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray-element: #2D2D2D;
+    --gray-text: rgba(255, 255, 255, 0.7);
+    /* Others */
+    --primary_hover: #C11119;
+    --gray-element_hover: #3C3C3C;
+    --transparent-bg: rgba(22, 22, 22, 0.7);
+    --btn-outline-border: rgba(128, 128, 128, 0.7);
+    --divider-line: rgb(35, 35, 35);
+}
+
+body {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+:focus {
+    outline: 1px solid var(--white);
+}
+
+.divider {
+    background-color: var(--divider-line);
+}
+
+form input {
+    background-color: var(--transparent-bg);
+    border-color: var(--btn-outline-border);
+    color: var(--white);
+}
+
+form input::placeholder {
+    color: var(--gray-text);
+}
+
+.btn-filled {
+    background-color: var(--primary);
+    border-color: none;
+    color: var(--white);
+}
+
+.btn-filled:hover {
+    background-color: var(--primary_hover);
+}
+
+.btn-outlined {
+    background-color: var(--transparent-bg);
+    border-color: var(--btn-outline-border);
+    color: var(--white);
+}
+
+select option {
+    color: var(--black);
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#faqs .list dt,
+#faqs .list dd {
+    background-color: var(--gray-element);
+}
+
+#faqs .list dt:hover {
+    background-color: var(--gray-element_hover);
+}
+
+footer {
+    color: var(--gray-text);
+}
+
+@media screen and (min-height=1920) {
+    /* Desktop or Wide screen */
+}
+
+@media screen and (min-height=1280) {
+    /* Laptop */
+}
+
+@media screen and (min-height=900) {
+    /* Tablet */
+}
+
+@media screen and (min-height=600) {
+    /* Mobile */
+}
